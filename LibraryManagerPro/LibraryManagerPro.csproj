@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B4F0E65C-1C3A-4484-91D2-40631F60B36C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagerPro</RootNamespace>
+    <AssemblyName>LibraryManagerPro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Camera_NET">
+      <HintPath>..\..\本项目资料\项目需要的相关类和类库\【兼容问题基本解决】使用第三方类库改进的摄像头Demo\CarmeraDemo\CarmeraDemo\bin\Debug\Camera_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2010">
+      <HintPath>..\MyLib\DirectShowLib-2010.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddBook.Designer.cs">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminLogin.Designer.cs">
+      <DependentUpon>FrmAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBookManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBookManager.Designer.cs">
+      <DependentUpon>FrmBookManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBorrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBorrowBook.Designer.cs">
+      <DependentUpon>FrmBorrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEidtReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEidtReader.Designer.cs">
+      <DependentUpon>FrmEidtReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifyPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifyPwd.Designer.cs">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewBook.Designer.cs">
+      <DependentUpon>FrmNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReaderManger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReaderManger.Designer.cs">
+      <DependentUpon>FrmReaderManger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReturnBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReturnBook.Designer.cs">
+      <DependentUpon>FrmReturnBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddBook.resx">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminLogin.resx">
+      <DependentUpon>FrmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBookManager.resx">
+      <DependentUpon>FrmBookManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBorrowBook.resx">
+      <DependentUpon>FrmBorrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEidtReader.resx">
+      <DependentUpon>FrmEidtReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifyPwd.resx">
+      <DependentUpon>FrmModifyPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewBook.resx">
+      <DependentUpon>FrmNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReaderManger.resx">
+      <DependentUpon>FrmReaderManger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReturnBook.resx">
+      <DependentUpon>FrmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{991242d4-ff92-4165-8422-dcb77e233e8a}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{37e96c8c-62d3-458a-b7ec-774a2c4ffb22}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{ea603b31-559b-4a00-bb34-a42095ad290b}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
